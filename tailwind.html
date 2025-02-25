@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khris' Beer Reviews</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Hero Section -->
+    <div class="bg-yellow-400 text-black text-center py-6">
+        <h1 class="text-4xl font-bold">Khris' Beer Reviews 🍺</h1>
+        <p class="text-lg">New Orleans' #1 Idiot Beer Reviewer</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-500">Beer Hub</a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-yellow-500">Home</a>
+                <a href="#" class="text-gray-700 hover:text-yellow-500">Top Rated</a>
+                <a href="#" class="text-gray-700 hover:text-yellow-500">New Reviews</a>
+                
+                <!-- Dropdown -->
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-yellow-500">Categories ⌄</button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-100">Lagers</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-100">IPAs</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-100">Stouts</a>
+                        <hr>
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-100">More...</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex items-center">
+                <input type="text" placeholder="Search for beers..." class="border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-yellow-500">
+                <button class="ml-2 bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">Search</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700" id="mobile-menu-button">☰</button>
+        </div>
+    </nav>
+
+    <!-- Featured Beer Review Section -->
+    <div class="container mx-auto mt-8 px-4">
+        <h2 class="text-center text-2xl font-bold mb-6">🍻 Featured Beer Review 🍻</h2>
+        
+        <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="summer.png" alt="Beer Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-yellow-600">Leinenkugel’s Summer Shandy</h3>
+                <p class="text-gray-700 mt-2">
+                    Leinenkugel’s Summer Shandy is a nice, fruity lemonade-flavored beer.
+                    I bought it last Saturday, and I had it that night. 
+                </p>
+                <a href="#" class="block text-center mt-4 bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600">Read Full Review</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
